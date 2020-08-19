@@ -176,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
         toEmail = "deadbrainviv@gmail.com";
         toEmailList = Arrays.asList(toEmail
                 .split("\\s*,\\s*"));
-        emailSubject = "User of TestApp Logged in at \" + date";
+        emailSubject = "User of TestApp Logged in at " + date;
         emailBody = "Name :" + s_username + "\n Email :" + s_email + "\n Contact :" + s_phone + "\n Location" + s_location;
 
         new SendMailTask(MainActivity.this).execute(fromEmail,fromPassword,toEmailList,emailSubject,emailBody);
